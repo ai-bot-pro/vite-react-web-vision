@@ -1,5 +1,4 @@
 import { useCallback, useRef } from "react";
-import Image from "next/image";
 import { VoiceEvent } from "chat-bot-rtvi-client";
 import { useVoiceClientEvent } from "chat-bot-rtvi-web-react";
 
@@ -20,7 +19,7 @@ export const Avatar: React.FC = () => {
 
   return (
     <>
-      <Image src={FaceSVG} alt="Face" className={styles.face} />
+      <img src={FaceSVG} alt="Face" className={styles.face} />
       <div className={styles.faceBubble} ref={volRef} />
     </>
   );
