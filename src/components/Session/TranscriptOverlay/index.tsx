@@ -10,6 +10,19 @@ const TranscriptOverlay: React.FC = () => {
   const displayIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useVoiceClientEvent(
+    VoiceEvent.BotStoppedSpeaking,
+    useCallback(() => {
+      //setSentencesBuffer((s) => []);
+    }, [])
+  );
+  useVoiceClientEvent(
+    VoiceEvent.ConfigUpdated,
+    useCallback(() => {
+      setSentencesBuffer((s) => []);
+      setSentences((s) => []);
+    }, [])
+  );
+  useVoiceClientEvent(
     VoiceEvent.BotTranscript,
     useCallback((text: string) => {
       setSentencesBuffer((s) => [...s, text.trim()]);
@@ -18,7 +31,7 @@ const TranscriptOverlay: React.FC = () => {
 
   useEffect(() => {
     if (sentencesBuffer.length > 0) {
-      const interval = 1000 * sentences.length;
+      const interval = 100;
       displayIntervalRef.current = setTimeout(() => {
         setSentences((s) => [...s, sentencesBuffer[0]]);
         setSentencesBuffer((s) => s.slice(1));

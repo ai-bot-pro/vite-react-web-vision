@@ -31,6 +31,8 @@ const serverUrl = import.meta.env.VITE_BASE_URL;
 const chatBotName = import.meta.env.VITE_CHAT_BOT_NAME;
 const botReadyTimeout =
   import.meta.env.VITE_BOT_READY_TIMEOUT || BOT_READY_TIMEOUT;
+const taskConnector =
+  defaultTaskConnector.tag.length > 0 ? defaultTaskConnector : undefined;
 export const Layout = () => {
   const voiceClientRef = useRef<DailyVoiceClient | null>(null);
   const [showSplash, setShowSplash] = useState<boolean>(showSplashPage);
@@ -50,10 +52,10 @@ export const Layout = () => {
       customHeaders: {
         Authorization: `Bearer ${import.meta.env.VITE_SERVER_AUTH}`,
       },
-      customBodyParams: {
-        //task_connector: defaultTaskConnector,
-      },
     };
+    if (taskConnector) {
+      voiceClientParams.customBodyParams = { task_connector: taskConnector };
+    }
     if (serverUrl.includes("api.cortex.cerebrium.ai")) {
       voiceClientParams = {
         enableCam: true,
@@ -70,10 +72,19 @@ export const Layout = () => {
           info: {
             config_list: defaultConfig,
             services: defaultServices,
-            //task_connector: defaultTaskConnector,
           },
         },
       };
+      if (taskConnector) {
+        voiceClientParams.customBodyParams = {
+          chat_bot_name: chatBotName,
+          info: {
+            config_list: defaultConfig,
+            services: defaultServices,
+            task_connector: taskConnector,
+          },
+        };
+      }
     }
     const voiceClient = new DailyVoiceClient(voiceClientParams);
 

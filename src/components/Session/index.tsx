@@ -12,7 +12,9 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 import Agent from "./Agent";
 import Stats from "./Stats";
+import TranscriptOverlay from "./TranscriptOverlay";
 import UserMicBubble from "./UserMicBubble";
+
 
 let stats_aggregator: StatsAggregator;
 
@@ -135,6 +137,8 @@ export const Session = React.memo(
             handleMute={() => toggleMute()}
           />
         </div>
+
+        <TranscriptOverlay />
 
         <footer className="w-full flex flex-row mt-auto self-end md:w-auto">
           <div className="flex flex-row justify-between gap-3 w-full md:w-auto">
