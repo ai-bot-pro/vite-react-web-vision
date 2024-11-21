@@ -3,11 +3,13 @@ export const BOT_READY_TIMEOUT = 30 * 1000; // 30 seconds
 export const defaultBotProfile = "vision_2024_08";
 export const defaultMaxDuration = 600;
 const configMode: string = import.meta.env.VITE_CONFIG_MODE;
+const asrModel: string = import.meta.env.VITE_ASR_MODEL ? import.meta.env.VITE_ASR_MODEL : "./models/FunAudioLLM/SenseVoiceSmall";
 const visionModel: string = import.meta.env.VITE_VISION_MODEL ? import.meta.env.VITE_VISION_MODEL : "./models/Qwen/Qwen2-VL-2B-Instruct";
-const taskConnectorTag = import.meta.env.VITE_TASK_CONNECTOR_TAG;
+const taskConnectorTag = import.meta.env.VITE_TASK_CONNECTOR_TAG ? import.meta.env.VITE_TASK_CONNECTOR_TAG : "";
 const redisHost = import.meta.env.VITE_REDIS_HOST;
 const redisPort = import.meta.env.VITE_REDIS_PORT;
 const redisDB = import.meta.env.VITE_REDIS_DB;
+
 
 export const defaultServices = {
   pipeline: "achatbot",
@@ -79,7 +81,7 @@ export const defaultMockVisionConfig = [
       {
         name: "args", value: {
           "language": "zn",
-          "model_name_or_path": "./models/FunAudioLLM/SenseVoiceSmall"
+          "model_name_or_path": asrModel,
         }
       },
     ],
@@ -178,7 +180,7 @@ export const defaultVisionConfig = [
       {
         name: "args", value: {
           "language": "zn",
-          "model_name_or_path": "./models/FunAudioLLM/SenseVoiceSmall"
+          "model_name_or_path": asrModel,
         }
       },
     ],
