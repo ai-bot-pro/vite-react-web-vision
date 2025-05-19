@@ -12,9 +12,9 @@
   "dependencies": {
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tooltip": "^1.0.7",
-    "chat-bot-rtvi-client": "0.1.4",
-    "chat-bot-rtvi-daily-client": "0.1.3",
-    "chat-bot-rtvi-web-react": "0.1.3",
+    "chat-bot-rtvi-client": "0.1.5",
+    "chat-bot-rtvi-daily-client": "0.1.4",
+    "chat-bot-rtvi-web-react": "0.1.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "deepmerge-ts": "^7.1.0",

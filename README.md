@@ -14,7 +14,7 @@ VITE_BOT_READY_TIMEOUT=15000 # 15 seconds
 ```
 
 ```
-yarn
+yarn install
 yarn run dev
 ```
 

@@ -268,16 +268,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@daily-co/daily-js@npm:>=0.68.0":
-  version: 0.71.2
-  resolution: "@daily-co/daily-js@npm:0.71.2"
+"@daily-co/daily-js@npm:^0.79.0":
+  version: 0.79.0
+  resolution: "@daily-co/daily-js@npm:0.79.0"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
-    "@sentry/browser": "npm:^7.60.1"
+    "@sentry/browser": "npm:^8.33.1"
     bowser: "npm:^2.8.1"
     dequal: "npm:^2.0.3"
     events: "npm:^3.1.0"
-  checksum: 10c0/8761db838aabbaf847d37e42e247c5652d71a4304d1f7aa8aa8c5cd58900ee3513f575ca60c0781627cac3d1cf172b3cdd1d19612747e922ea226f110519a9b5
+  checksum: 10c0/07ef0f592fe30dbccf87e8109f5e3e6c3ffbb09e03ef1c7368f5f88598e7e90da9f4b36e91b5232b5f24ccf9efd0cb9215ba92eebb1423736608497cb97f6cd6
   languageName: node
   linkType: hard
 
@@ -1159,103 +1159,61 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry-internal/feedback@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry-internal/feedback@npm:7.119.0"
+"@sentry-internal/browser-utils@npm:8.55.0":
+  version: 8.55.0
+  resolution: "@sentry-internal/browser-utils@npm:8.55.0"
   dependencies:
-    "@sentry/core": "npm:7.119.0"
-    "@sentry/types": "npm:7.119.0"
-    "@sentry/utils": "npm:7.119.0"
-  checksum: 10c0/02ef3f157312c81dd8a2b9504aebf7b4ba5a81c395d529427ee521cd85b5026e847e5f37f3cc11b52229596f7a6f20c34a97ee3d8525a4d6c28aff0c32f1e615
+    "@sentry/core": "npm:8.55.0"
+  checksum: 10c0/201eb94ee64a4dab058153c64dd4ce0af082f3c3bc84a5441cdadf344d9554a0a67c9d9dfdff720eb42de214d67d734d5bda25a050c2efd59c03f60562bb139a
   languageName: node
   linkType: hard
 
-"@sentry-internal/replay-canvas@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry-internal/replay-canvas@npm:7.119.0"
+"@sentry-internal/feedback@npm:8.55.0":
+  version: 8.55.0
+  resolution: "@sentry-internal/feedback@npm:8.55.0"
   dependencies:
-    "@sentry/core": "npm:7.119.0"
-    "@sentry/replay": "npm:7.119.0"
-    "@sentry/types": "npm:7.119.0"
-    "@sentry/utils": "npm:7.119.0"
-  checksum: 10c0/a51124c6709d57b245ad9d16e446601f9fd42bebcf3a10e6ea04e1e5f91e490a9c815761ed71a6e837daad3b1d7da8be91a4f99b5f258e15c0eb906ee3411e73
+    "@sentry/core": "npm:8.55.0"
+  checksum: 10c0/2515c4eca6226e3df28a498f7f3771d7820556887bf8c06f2d5469c92474cf72ed81eaa0079f6bcf46905c54315e2631bb7b9ed7ed6741cf9b7f73a3f4875acc
   languageName: node
   linkType: hard
 
-"@sentry-internal/tracing@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry-internal/tracing@npm:7.119.0"
+"@sentry-internal/replay-canvas@npm:8.55.0":
+  version: 8.55.0
+  resolution: "@sentry-internal/replay-canvas@npm:8.55.0"
   dependencies:
-    "@sentry/core": "npm:7.119.0"
-    "@sentry/types": "npm:7.119.0"
-    "@sentry/utils": "npm:7.119.0"
-  checksum: 10c0/3cf855bdb6a6dae2b12626d74c0d6c03f9db749e7da7a9871929277a17fbaa411139ef6e892fe86b2836c706850fd165628954a6de6c1f44fdca2f82bde97ff2
+    "@sentry-internal/replay": "npm:8.55.0"
+    "@sentry/core": "npm:8.55.0"
+  checksum: 10c0/6f3c619ede1de47635035f74477dd5a11e5c2cac9d0906448a7fffb6dad1c5bd9a49a594fbc2a51ba3b1859a91f60e08ab6de2d9961ccbaa343af580f1d13fb1
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:^7.60.1":
-  version: 7.119.0
-  resolution: "@sentry/browser@npm:7.119.0"
+"@sentry-internal/replay@npm:8.55.0":
+  version: 8.55.0
+  resolution: "@sentry-internal/replay@npm:8.55.0"
   dependencies:
-    "@sentry-internal/feedback": "npm:7.119.0"
-    "@sentry-internal/replay-canvas": "npm:7.119.0"
-    "@sentry-internal/tracing": "npm:7.119.0"
-    "@sentry/core": "npm:7.119.0"
-    "@sentry/integrations": "npm:7.119.0"
-    "@sentry/replay": "npm:7.119.0"
-    "@sentry/types": "npm:7.119.0"
-    "@sentry/utils": "npm:7.119.0"
-  checksum: 10c0/8a29d1149a02f3f1b01723b0008517dfce34315b7803cd8d7f1543d401d4aba53d5eec20d1d9b879985973cddce0b29de62fe18d8da210e24cf73fd2b12a3be9
+    "@sentry-internal/browser-utils": "npm:8.55.0"
+    "@sentry/core": "npm:8.55.0"
+  checksum: 10c0/320fd5685c1e84c5feebaa88fc72afd0bd5189b95d690f8c24301cd8b13789431b2c1d28e3e5a93f669ca3b80cdc830e672723aa7a28ff8f0b901674ce0c0529
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry/core@npm:7.119.0"
+"@sentry/browser@npm:^8.33.1":
+  version: 8.55.0
+  resolution: "@sentry/browser@npm:8.55.0"
   dependencies:
-    "@sentry/types": "npm:7.119.0"
-    "@sentry/utils": "npm:7.119.0"
-  checksum: 10c0/6f2246a9a6ea5dbec8422fccd265aaf8e20582eaf03f1199ef526a41e5939b861cf5050a07975f17c0920c86b4c8cf3416e805131c713899da49d74d529d0697
+    "@sentry-internal/browser-utils": "npm:8.55.0"
+    "@sentry-internal/feedback": "npm:8.55.0"
+    "@sentry-internal/replay": "npm:8.55.0"
+    "@sentry-internal/replay-canvas": "npm:8.55.0"
+    "@sentry/core": "npm:8.55.0"
+  checksum: 10c0/a485de7385851c96ed4c2291d065594aeea2076b11b3b113f4866fdbff1522524abd97664f0d0b011e0eff6c4986a556f080bccfa1b770466c6afcb6122dfbaf
   languageName: node
   linkType: hard
 
-"@sentry/integrations@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry/integrations@npm:7.119.0"
-  dependencies:
-    "@sentry/core": "npm:7.119.0"
-    "@sentry/types": "npm:7.119.0"
-    "@sentry/utils": "npm:7.119.0"
-    localforage: "npm:^1.8.1"
-  checksum: 10c0/1e539f0234067587380fbedb132ad4b11f715d229f1fe1571c4c545f23e6dae867d8484d825c271599e1f22d62dc66e481a78e86e6a8653fe60ddcb11b04d93b
-  languageName: node
-  linkType: hard
-
-"@sentry/replay@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry/replay@npm:7.119.0"
-  dependencies:
-    "@sentry-internal/tracing": "npm:7.119.0"
-    "@sentry/core": "npm:7.119.0"
-    "@sentry/types": "npm:7.119.0"
-    "@sentry/utils": "npm:7.119.0"
-  checksum: 10c0/fa861d0b0912ac55a462899931e238d957048cddf91e7ccbaf58afc94580fea147079d777993c63212aa923d36dd253daf595cf866144a92e1c7860900cb3348
-  languageName: node
-  linkType: hard
-
-"@sentry/types@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry/types@npm:7.119.0"
-  checksum: 10c0/b2ca256ef1d7fb156d455908aa3e021cb2f58100355961fca454d0c5e6c1b8d1a949c479c136dbceca2b76dabcd71cd950e089c576f7e424effbe60f0c0bbaa6
-  languageName: node
-  linkType: hard
-
-"@sentry/utils@npm:7.119.0":
-  version: 7.119.0
-  resolution: "@sentry/utils@npm:7.119.0"
-  dependencies:
-    "@sentry/types": "npm:7.119.0"
-  checksum: 10c0/5fd5e5bb0a45548d65baa6c4a04481e750433daa53ce2caa0baa0db19a912b74168290043f8605ed5c10cef7db744efdca2130020d9f59dca3a89d818492daf5
+"@sentry/core@npm:8.55.0":
+  version: 8.55.0
+  resolution: "@sentry/core@npm:8.55.0"
+  checksum: 10c0/51c1768f0bd940a060787b402dba9df3347c918ea4c0fdc300d45c37703ebbf6f7adee9fff332cfd6b23372b33c46e6d2f31a04227762d490aaddc14773894a0
   languageName: node
   linkType: hard
 
@@ -1740,40 +1698,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chat-bot-rtvi-client@npm:0.1.4":
-  version: 0.1.4
-  resolution: "chat-bot-rtvi-client@npm:0.1.4"
+"chat-bot-rtvi-client@npm:0.1.5":
+  version: 0.1.5
+  resolution: "chat-bot-rtvi-client@npm:0.1.5"
   dependencies:
     "@types/events": "npm:^3.0.3"
     deepmerge-ts: "npm:^7.0.3"
     events: "npm:^3.3.0"
     nanoid: "npm:^5.0.7"
     typed-emitter: "npm:^2.1.0"
-  checksum: 10c0/07371c63ab58a3092b8f379f0ef7d5b07db9b534339789cb383f2c8ca9f092dc9f59fd0db7d0142254f28f3bb3bb1bdbb948ae55f980b4606c859de992c43e12
+  checksum: 10c0/7852779ff2dc48837f5eac4ab38fe49e1a7b178a1a2b76d92ce8201aeec8e08e6b2fa0b7362b31918ffb1a21fe7830cbc819ea0978cfa11deb3dfd3a4bcaa72a
   languageName: node
   linkType: hard
 
-"chat-bot-rtvi-daily-client@npm:0.1.3":
-  version: 0.1.3
-  resolution: "chat-bot-rtvi-daily-client@npm:0.1.3"
+"chat-bot-rtvi-daily-client@npm:0.1.4":
+  version: 0.1.4
+  resolution: "chat-bot-rtvi-daily-client@npm:0.1.4"
   dependencies:
-    "@daily-co/daily-js": "npm:>=0.68.0"
+    "@daily-co/daily-js": "npm:^0.79.0"
   peerDependencies:
     chat-bot-rtvi-client: "*"
-  checksum: 10c0/ceb4ab2e804ef95d92af1990327b5e544f65fb992a3b3bea68024904f97f4b62c2e09e57b9a62412ec2f548b2a684137f5745f0bb5b5146e13ed2342557d876b
+  checksum: 10c0/086b6296018628f00369c5a40980883c5b14aa32276a04d14ebc5e99a4e4cef130ca2bcde7e543dfd5f4486d0a189f53bec45bb3668a63a9bf5ee5ed6593a886
   languageName: node
   linkType: hard
 
-"chat-bot-rtvi-web-react@npm:0.1.3":
-  version: 0.1.3
-  resolution: "chat-bot-rtvi-web-react@npm:0.1.3"
+"chat-bot-rtvi-web-react@npm:0.1.4":
+  version: 0.1.4
+  resolution: "chat-bot-rtvi-web-react@npm:0.1.4"
   dependencies:
     jotai: "npm:^2.9.0"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
   peerDependencies:
     chat-bot-rtvi-client: "*"
-  checksum: 10c0/67290415c29081a91515dc46d52efe9db1799ad2fdc0381951e9a1836e4d0a82f07a8e8f073696b831a7073eedaceb8d711972e48c76728b1f960c288d1b812d
+  checksum: 10c0/60ae1ce9ed046eb7313ef80b148125416747a0f401a1bcf0b21ea13d89e4c308f95084505a87c0ad82a5c951e01bba955b7e23036bc2c1c3b5bbf6de813698bf
   languageName: node
   linkType: hard
 
@@ -2544,13 +2502,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immediate@npm:~3.0.5":
-  version: 3.0.6
-  resolution: "immediate@npm:3.0.6"
-  checksum: 10c0/f8ba7ede69bee9260241ad078d2d535848745ff5f6995c7c7cb41cfdc9ccc213f66e10fa5afb881f90298b24a3f7344b637b592beb4f54e582770cdce3f1f039
-  languageName: node
-  linkType: hard
-
 "import-fresh@npm:^3.2.1":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
@@ -2781,15 +2732,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lie@npm:3.1.1":
-  version: 3.1.1
-  resolution: "lie@npm:3.1.1"
-  dependencies:
-    immediate: "npm:~3.0.5"
-  checksum: 10c0/d62685786590351b8e407814acdd89efe1cb136f05cb9236c5a97b2efdca1f631d2997310ad2d565c753db7596799870140e4777c9c9b8c44a0f6bf42d1804a1
-  languageName: node
-  linkType: hard
-
 "lilconfig@npm:^2.1.0":
   version: 2.1.0
   resolution: "lilconfig@npm:2.1.0"
@@ -2808,15 +2750,6 @@ __metadata:
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
   checksum: 10c0/3da6ee62d4cd9f03f5dc90b4df2540fb85b352081bee77fe4bbcd12c9000ead7f35e0a38b8d09a9bb99b13223446dd8689ff3c4959807620726d788701a83d2d
-  languageName: node
-  linkType: hard
-
-"localforage@npm:^1.8.1":
-  version: 1.10.0
-  resolution: "localforage@npm:1.10.0"
-  dependencies:
-    lie: "npm:3.1.1"
-  checksum: 10c0/00f19f1f97002e6721587ed5017f502d58faf80dae567d5065d4d1ee0caf0762f40d2e2dba7f0ef7d3f14ee6203242daae9ecad97359bfc10ecff36df11d85a3
   languageName: node
   linkType: hard
 
@@ -4025,9 +3958,9 @@ __metadata:
     "@types/react-dom": "npm:^18.3.0"
     "@types/react-sparklines": "npm:^1.7.5"
     "@vitejs/plugin-react": "npm:^4.3.1"
-    chat-bot-rtvi-client: "npm:0.1.4"
-    chat-bot-rtvi-daily-client: "npm:0.1.3"
-    chat-bot-rtvi-web-react: "npm:0.1.3"
+    chat-bot-rtvi-client: "npm:0.1.5"
+    chat-bot-rtvi-daily-client: "npm:0.1.4"
+    chat-bot-rtvi-web-react: "npm:0.1.4"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.1"
     deepmerge-ts: "npm:^7.1.0"
